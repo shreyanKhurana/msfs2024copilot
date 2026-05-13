@@ -9,6 +9,7 @@ AppName={#AppName}
 AppVersion={#AppVersion}
 AppPublisher={#AppPublisher}
 DefaultDirName={autopf}\{#AppName}
+ArchitecturesInstallIn64BitMode=x64
 DisableDirPage=yes
 DefaultGroupName={#AppName}
 DisableProgramGroupPage=yes
@@ -19,8 +20,8 @@ SolidCompression=yes
 WizardStyle=modern
 
 [Files]
-Source: "..\src\Msfs2024Copilot\bin\Release\{#AppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\Msfs2024Copilot\bin\Release\*.dll"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs
+Source: "..\src\Msfs2024Copilot\bin\x64\Release\{#AppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\Msfs2024Copilot\bin\x64\Release\*.dll"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs
 
 [Icons]
 Name: "{autoprograms}\{#AppName}"; Filename: "{app}\{#AppExeName}"
