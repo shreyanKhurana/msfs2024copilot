@@ -14,7 +14,7 @@ Offline voice copilot for Microsoft Flight Simulator 2024 using SimConnect + Win
 - Inno Setup 6 (for installer)
 
 ## Setup
-1. Copy `SimConnect.dll` into `lib/`.
+1. Copy `Microsoft.FlightSimulator.SimConnect.dll` into `lib/`.
 2. Open `src/Msfs2024Copilot.sln` in Visual Studio.
 3. Build `Release`.
 
@@ -24,5 +24,6 @@ Offline voice copilot for Microsoft Flight Simulator 2024 using SimConnect + Win
 3. Compile to generate the EXE in `installer/output/`.
 
 ## Notes
+- Use the managed SimConnect assembly from the SDK (lib/managed).
 - This project is a fresh, original implementation and does not copy FS2 Crew content.
 - Extend grammar and checklist logic in `SpeechService` and `SimConnectService`.

@@ -1,3 +1,3 @@
-Copy SimConnect.dll here from the MSFS SDK.
+Copy the managed SimConnect assembly here from the MSFS SDK.
 Typical path:
-C:\MSFS SDK\SimConnect SDK\lib\SimConnect.dll
+C:\MSFS 2024 SDK\SimConnect SDK\lib\managed\Microsoft.FlightSimulator.SimConnect.dll

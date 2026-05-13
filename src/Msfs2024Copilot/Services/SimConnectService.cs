@@ -91,7 +91,7 @@ namespace Msfs2024Copilot.Services
             try
             {
                 _simConnect.MapClientEventToSimEvent((Enum)SimConnectEvent.Generic, eventName);
-                _simConnect.TransmitClientEvent(SimConnect.SIMCONNECT_OBJECT_ID_USER, SimConnectEvent.Generic, 0, SimConnectGroup.Priority, SimConnectEventFlags.GroupIdIsPriority);
+                _simConnect.TransmitClientEvent(SimConnect.SIMCONNECT_OBJECT_ID_USER, SimConnectEvent.Generic, 0, SimConnectGroup.Priority, SIMCONNECT_EVENT_FLAG.GROUPID_IS_PRIORITY);
                 StatusChanged?.Invoke(this, $"Sent: {eventName}");
             }
             catch (COMException)
